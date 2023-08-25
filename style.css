@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html,body{
+    width: 100%;
+    height: 10%;
+    background: #23263a;
+}
+nav{
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+    height: 100px;
+    background: #212336;
+    border: 1px solid #212336;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    padding-left: 12vw;
+}
+nav .logo > h1{
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+nav .logo > h1,span:hover{
+    cursor: pointer;
+}
+nav .logo h1 span{
+    color: #ff4a57;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12vw;
+
+}
+li{
+    display: inline-block;
+    padding: 20px;
+    list-style: none;
+}
+
+a{
+    color: #cccdd8;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%; 
+    transition: width 0.3s;
+    background: #ff4a57; 
+}
+
+
+a:hover::after{
+    width: 100%;
+
+}
+#header{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#header .content{
+    padding: 8vw 0 0 12vw;
+}
+#header .content h1{
+    font-size: 5vw;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#header .content h3{
+   
+    color: #77777751;
+    font-weight: 500;
+    font-size:22px;
+}
+.content > button{
+    background-color: #ff4a57;
+    border: none;
+    border-radius: 1px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 20px 4vw;
+    margin-top: 2vw;
+    outline: none;
+    border: 2px solid #ff4a57;
+
+}
+
+.content > button:hover{
+
+    background: transparent;
+    border: 2px solid #ff4a57;
+    cursor: progress;
+}
+
+#skills{
+    height: 100vh;
+    width: 100%;
+    padding-left: 12vw;
+}
+#skills > h2{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+}
+#skills > h1{
+    color: #ff4a57;
+    font-size: 4vw;
+}
+#skills > h1::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background: #ff4a57;
+    width: 10%;
+}
+.cards{
+    justify-content: center;
+    align-items: center;
+    padding-right: 12vw;
+}
+.card{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin: 2vw;
+    background:#2b2d41;
+}
