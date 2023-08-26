@@ -10,8 +10,8 @@ html,body{
     background: #23263a;
 }
 nav{
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100px;
     background: #212336;
@@ -194,7 +194,7 @@ a:hover::after{
 }
 .form > input{
     height: 6vw;
-    width: 70%;
+    width: 95%;
     background: #2b2d41;
     border: none;
     outline: none;
@@ -221,6 +221,6 @@ a:hover::after{
 }
 .form > button:hover{
     background: transparent;
-    color: #ff4a57;
+    color: #ffffff;
     cursor: pointer;
 }
