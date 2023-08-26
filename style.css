@@ -117,6 +117,7 @@ a:hover::after{
     height: 100vh;
     width: 100%;
     padding-left: 12vw;
+    padding-right: 12vw;
 }
 #skills > h2{
     color: #ffffff;
@@ -130,19 +131,96 @@ a:hover::after{
 #skills > h1::after{
     content: '';
     display: block;
-    height: 5px;
+    height: 8px;
     background: #ff4a57;
-    width: 10%;
+    width: 11%;
 }
-.cards{
-    justify-content: center;
-    align-items: center;
-    padding-right: 12vw;
+.cards {
+    height: inherit;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
 }
 .card{
-    display: inline-block;
+    border-radius: 1px;
     height: 300px;
     width: 300px;
-    margin: 2vw;
-    background:#2b2d41;
+    background: #2b2d41;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:2vw 2vw;
+
+}
+.card .skill-logo i{
+    color: #ff4a57;
+    font-size: 3vw;
+
+}
+.card h4{
+    padding-top: 1vw;
+    color: #cccdd8;
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+.card h5{
+    color: #cccdd8;
+    letter-spacing: .5px;
+    font-size: 1vw;
+    padding-top: 1vw;
+}
+.contact-form{
+    margin-top: 15vw;
+    height: 100vh;
+    width: 100%;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+.form{
+    height: 100%;
+    width: 100vh;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 7%;
+
+}
+.form > h1{
+    color: #ff4a57;
+    font-size: 4.3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.form > input{
+    height: 6vw;
+    width: 70%;
+    background: #2b2d41;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #cccdd8;
+    border-radius: 2px;
+}
+::placeholder{
+    font-size: 2rem;
+    color: #23263a;
+    font-weight: 900;
+    padding-left: 20px;
+}
+.form > button{
+    border: 2px solid #ff4a57;
+    width: 30%;
+    background:#ff4a57;
+    margin-left: 30vw;
+    height: 100px;
+    color: #212336;
+    font-size: 3vw;
+    font-weight: 800;
+    border-radius: 2px;
+}
+.form > button:hover{
+    background: transparent;
+    color: #ff4a57;
+    cursor: pointer;
 }
